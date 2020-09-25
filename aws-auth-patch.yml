@@ -14,9 +14,9 @@ data:
     []
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-25T14:25:30Z"
+  creationTimestamp: "2020-09-25T17:58:03Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "1488"
+  resourceVersion: "1515"
   selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
-  uid: 7b043914-8ab5-4973-96ff-e240c04f35c0
+  uid: 4e36c63b-38c9-4b6e-aad8-c9ad7f317099
