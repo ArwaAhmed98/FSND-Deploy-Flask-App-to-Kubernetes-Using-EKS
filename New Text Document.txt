@@ -1,0 +1,12 @@
+ a236b46e8fba743ec8b0d2ce25b9c5de-1897300271.us-east-2.elb.amazonaws.com
+
+
+kubectl get services simple-jwt-api -o wide
+
+
+
+export TOKEN=`curl -d '{"email":"arwaahmedmahmoud99@gmail.com","password":"123456"}' -H "Content-Type: application/json" -X POST a236b46e8fba743ec8b0d2ce25b9c5de-1897300271.us-east-2.elb.amazonaws.com/auth  | jq -r '.token'`
+ 
+
+
+curl --request GET 'a236b46e8fba743ec8b0d2ce25b9c5de-1897300271.us-east-2.elb.amazonaws.com/contents' -H "Authorization: Bearer ${TOKEN}" | jq 
